@@ -13,6 +13,6 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  location = "westus"
-  name     = "grupoTerraform"
+  location = var.group_location
+  name     = var.group_name
 }
